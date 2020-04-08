@@ -24,6 +24,7 @@ data "template_file" "repl_ptfe_config" {
     s3_bucket_name         = var.s3_bucket
     s3_bucket_region       = var.s3_region
     additional_no_proxy    = var.additional_no_proxy
+    syslog_endpoint        = var.syslog_endpoint
   }
 }
 

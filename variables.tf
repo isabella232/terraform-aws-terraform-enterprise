@@ -151,6 +151,12 @@ variable "subnet_tags" {
   default     = {}
 }
 
+variable "syslog_endpoint" {
+  type        = string
+  description = "The endpoint URI for a syslog listener"
+  default     = ""
+}
+
 variable "update_route53" {
   type        = string
   description = "whether or not to automatically update route53 records for the cluster"
